@@ -1,24 +1,16 @@
 {
   "manifest_version": 3,
-  "name": "Web Data Frame",
-  "version": "1.0.0",
-  "description": "A browser extension for web data extraction and framing",
-  "permissions": [
-    "activeTab",
-    "storage"
-  ],
+  "name": "Web2DataFrame",
+  "description": "Select data from any website and convert it into a pandas DataFrame.",
+  "version": "1.0",
+  "permissions": ["activeTab", "scripting", "downloads"],
   "action": {
     "default_popup": "popup.html",
     "default_icon": {
-      "16": "icons/icon16.png",
-      "48": "icons/icon48.png",
-      "128": "icons/icon128.png"
+      "16": "icons/16.png",
+      "48": "icons/48.png",
+      "128": "icons/128.png"
     }
-  },
-  "icons": {
-    "16": "icons/icon16.png",
-    "48": "icons/icon48.png",
-    "128": "icons/icon128.png"
   },
   "background": {
     "service_worker": "background.js"
