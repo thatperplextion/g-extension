@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Data Frame</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="popup-container">
+    <header class="popup-header">
+      <h1>Web Data Frame</h1>
+    </header>
+    
+    <main class="popup-content">
+      <div class="controls">
+        <button id="extractBtn" class="btn btn-primary">Extract Data</button>
+        <button id="clearBtn" class="btn btn-secondary">Clear</button>
+      </div>
+      
+      <div class="data-display">
+        <h2>Extracted Data</h2>
+        <div id="dataOutput" class="output-area">
+          <p class="placeholder">Click "Extract Data" to begin</p>
+        </div>
+      </div>
+      
+      <div class="actions">
+        <button id="copyBtn" class="btn btn-action" disabled>Copy to Clipboard</button>
+        <button id="downloadBtn" class="btn btn-action" disabled>Download JSON</button>
+      </div>
+    </main>
+    
+    <footer class="popup-footer">
+      <p>Version 1.0.0</p>
+    </footer>
+  </div>
+  
+  <script src="popup.js"></script>
+</body>
+</html>
